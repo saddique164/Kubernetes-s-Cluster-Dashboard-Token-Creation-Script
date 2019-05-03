@@ -1,6 +1,6 @@
 # Kubernetes-s-Cluster-Dashboard-Token-Creation-Script
 # I have created total three CentOs 7.5 VMs. All of them have kubernetes services and Docker-ce installed. I chose one node as a master.
-# here are some important tips for avoiding errors for avoiding errors.
+# here are some important tips for avoiding errors.
 
 1. Don't add nodes in the master untill you have installed flannel and Dashboard on it. Otherwise It will throw terminating and Breakoff errors.
  
@@ -45,7 +45,7 @@
           Tokens:              saddique-token-nc26q
            Events:              <none>
            
-   5. in last, run this command to get the token for sighing in.
+   5. in last, run this command to get the token for signing in.
    
    kubectl describe secret  saddique-token-nc26q -n kube-system
    
@@ -63,7 +63,7 @@ Data
 ====
 ca.crt:     1025 bytes
 namespace:  11 bytes
-token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzYWRkaXF1ZS10b2tlbi1uYzI2cSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJzYWRkaXF1ZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImM0ZDM4ZjM2LTZkODktMTFlOS1iZTgxLam5vbcpu6zpqGdxJSdRffbYQx-p_cpxaaZvkcOUM68OKAL717n7fUGP2RtBYKN8YkW3DGorqgDbBipfl3ssOu9JsgxEbOQBvzdwvLhDZSQO6fdkiA5dFGgZZRYwGxPO-3Crvx-kHWjBNF6E9V4lf3DOqXKTjRW8P7D4GQ41MjpiduSPD8riE9-i3Sd2Yhx2i0BZQN4xvO7U6mNMHB3NE0
+token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzYWRkaXF1ZS10b2tlbi1uYzI2cSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJzYWRkaXF1ZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImM0ZDM4ZjM2LTZkODktMTFlOS1iZTgxLam5vbcpu6zpqGdxJSdRffbYQxp_cpxaaZvkcOUM68OKAL717n7fUGP2RtBYKN8YkW3DGorqgDbBipfl3ssOu9JsgxEbOQBvzdwvLhDZSQO6fdkiA5dFGgZZRYwGxPO-3Crvx-kHWjBNF6E9V4lf3DOqXKTjRW8P7D4GQ41MjpiduSPD8riE9-i3Sd2Yhx2i0BZQN4xvO7U6mNMHB3NE0
 
 Use this token to loging in.
 
